@@ -332,6 +332,7 @@ gap: 24px;
     border-radius: 50%;
     border: 0 solid;
     background-color: #4d5ae5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ourteam-icon{
@@ -342,6 +343,10 @@ fill: #f4f4fd;
 
 .ourteam-link-media:hover{
 background-color: #404bbf;
+}
+
+.ourteam-link-media:focus{
+background-color: #404bbf;   
 }
 
 /* =====PORTFOLIO===== */
