@@ -311,6 +311,36 @@ padding: 32px 0;
         letter-spacing: 0.02em;
         text-align: center;
         color: #434455;
+        margin-bottom: 8px;
+}
+
+.ourteam-list-media{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 24px;
+}
+
+.ourteam-item-media{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0 solid;
+    background-color: #4d5ae5;
+}
+
+.ourteam-link-media{
+    display: block;
+}
+
+.ourteam-icon{
+margin: 12px 12px;
+fill: #f4f4fd;
+
+}
+
+.ourteam-item-media:hover{
+background-color: #404bbf;
 }
 
 /* =====PORTFOLIO===== */
@@ -406,7 +436,10 @@ border-bottom: 1px solid #e7e9fc;
     background: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flexbox;
+}
+
+.footer-container{
+    display: flex;
 }
 
 .footer-box-info{
@@ -437,12 +470,12 @@ width: 264px;
         max-width: 264px;
 }
 
-.social-media{
-
+.footer-social-media{
+    width: 208px;
+    height: 80px;
 }
 
 .foooter-media-text{
-  
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -452,19 +485,24 @@ width: 264px;
 
 .footer-meadia-list{
 display: flex;
+justify-content: center;
+align-items: center;
+gap: 16px;
 }
 
 .foooter-media-item{
-gap: 24;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+border: 0 solid;
+background-color: #4d5ae5;
 }
 
 .foooter-media-link{
-
+display: block;
 }
 
 .footer-icon{
-    display: flex;
-    width: 40;
-    height: 40;
-fill: #4d5ae5;
+margin: 8px 8px;
+fill: #f4f4fd;
 }
