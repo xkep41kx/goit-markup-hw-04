@@ -467,15 +467,17 @@ width: 264px;
         line-height: 1.5;
         letter-spacing: 0.02em;
         color: #f4f4fd;
-        max-width: 264px;
+        width: 264px;
 }
 
 .footer-social-media{
     width: 208px;
     height: 80px;
+    margin-left: 120px;
 }
 
 .foooter-media-text{
+
         font-weight: 500;
         line-height: 1.5;
         letter-spacing: 0.02em;
@@ -505,4 +507,8 @@ display: block;
 .footer-icon{
 margin: 8px 8px;
 fill: #f4f4fd;
+}
+
+.foooter-media-item:hover{
+background-color: #31d0aa;
 }
