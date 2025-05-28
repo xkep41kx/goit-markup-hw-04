@@ -151,20 +151,14 @@ gap: 40px;
 
 /* =====START===== */
 
-
-.fons{
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1-background.jpg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        padding: 188px 0;
-        max-width: 1440px;
-        margin: 0 auto;
-}
-
 .start {
-        background: #2e2f42;
-        margin: 0 auto;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office-1-background.jpg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            padding: 188px 0;
+            max-width: 1440px;
+            margin: 0 auto;
 }
 
 .start-title {
@@ -193,6 +187,7 @@ gap: 40px;
                     border: none;
                     margin: 0 auto;
                     display: block;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -232,6 +227,10 @@ gap: 24px;
     border: 1px solid #8e8f99;
         border-radius: 4px;
         background: #f4f4fd;
+        margin-bottom: 8px;
+        align-items: center;
+        justify-content: center;
+        height: 112px;
 }
 
 .benefits-icon{
@@ -244,7 +243,6 @@ margin: 24px auto;
         letter-spacing: 0.02em;
         color: #2e2f42;
         margin-bottom: 8px;
-        margin-top: 8px;
 }
 
 .benefits-text {
@@ -324,13 +322,16 @@ gap: 24px;
 .ourteam-item-media{
     width: 40px;
     height: 40px;
-    border-radius: 50%;
-    border: 0 solid;
-    background-color: #4d5ae5;
 }
 
 .ourteam-link-media{
-    display: block;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 0 solid;
+    background-color: #4d5ae5;
 }
 
 .ourteam-icon{
@@ -339,7 +340,7 @@ fill: #f4f4fd;
 
 }
 
-.ourteam-item-media:hover{
+.ourteam-link-media:hover{
 background-color: #404bbf;
 }
 
@@ -370,7 +371,7 @@ padding-bottom: 120px;
 .portfolio-item {
 width: calc((100% - 48px) /3);
 cursor: pointer;
-
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item .portfolio-content{
@@ -384,34 +385,34 @@ border-bottom: 1px solid #e7e9fc;
     background: #ffffff;
 }
 
-.portfolio-box{
-    position: relative;
-    overflow: hidden;
-}
-
 .portfolio-overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    background-color: #4d5ae5;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+        overflow: hidden;
 }
 
 .text-overlay{
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #f4f4fd;
-        margin: 0 auto;
-        margin-top: 40px;
-        max-width: 296px;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: 0.02em;
+color: #f4f4fd;
+padding: 40px 32px;
+background-color: #4d5ae5;
+top: 0;
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-box:hover .portfolio-overlay{
+.portfolio-overlay.text-overlay{
+position: absolute;
+height: 100%;
+width: 100%;
+}
+
+.text-overlay:hover{
     transform: translateY(0);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-subtitle {
